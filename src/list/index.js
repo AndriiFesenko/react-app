@@ -13,7 +13,7 @@ export default function Index() {
             })
     }, []);
     function onInputChange(value) {
-        let val = value;
+        let val = value.toLowerCase();
         let item = itemList.filter((item) => {
             let name = item.name.toLowerCase();
             return name.startsWith(val)
